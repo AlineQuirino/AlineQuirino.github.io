@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywods" content="Elétrica">
+        <meta name="description" content="Projetos e consultorias de engenharia elétrica">
+        <meta http-equiv="content-type" content="text/html"> 
+        <title>Lótus Engenharia-Contato</title>
+        <link href="bootstrap-4.4.1-dist/bootstrap-4.4.1-dist/css/bootstrap.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="css/estilo.css">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <header class="row">
+                <nav class="navbar navbar-expand-md col-12 justify-content-center" style="background-color:rgba(0, 65, 97, 0.6)">
+                    <img src="img/novo.png" class="img-fluid mx-5" width="10%" id="imgLogo">
+                    <button class="navbar-toggler text-white" type="button" data-toggle="collapse"
+                        data-target="#navegacao" aria-controls="navegacao" aria-expanded="false"
+                        aria-label="Alterna navegação">Menu 
+                    </button>
+                    <div class="navbar-collapse collapse" id="navegacao">  
+                        <a class="nav-item nav-link btn text-white text-uppercase" href="index.html">Home</a>
+                        <a class="nav-item nav-link btn text-white text-uppercase" href="quemSomos.html">Sobre Nós</a>
+                        <a class="nav-item nav-link btn text-white text-uppercase" href="contato.html">Contato</a>
+                        <a class="nav-item nav-link btn text-white text-uppercase" href="serviços.html">Serviços</a>
+                    </div>  
+                </nav>
+            </header>
+            <main>
+                    <p class="h1 display-4 text-center mt-5 mb-5" >Entre em Contato Conosco</p>
+                    <div class=" mt-5 mb-5 text-center bg-light p-4" >
+                        <img src="img/telefone.jpg" class="img-fluid" width="2%" id="img1" >
+                        <span style="font-size: 1.5em">(85) 9.9981-8820</span>
+                    </br>
+                        <img src="img/email.png" class="img-fluid"  width="2%" id="img2">
+                        <span style="font-size: 1.5em">lotusengenharia.ce@gmail.com</span>
+                     </div>
+                    
+                    <form class="my-5">
+                       <div class="form-row justify-content-center">
+                           <div class="form-group col-md-3">
+                               <label for="inputname" class="sr-only">Nome/Empresa</label>
+                               <input type="name" class="form-control" id="inputname" placeholder="Nome/Empresa" required>
+                           </div>
+                        </div> 
+                        <div class="form-row justify-content-center">
+                            <div class="form-group col-md-3">
+                                 <label for="cpf" class="sr-only" >CPF</label>
+                                 <input type="text" onblur="VerificaCPF(this)" class="form-control" id="cpf" placeholder="CPF" required>
+                             </div>
+                        </div> 
+                        <div class="form-row justify-content-center">    
+                           <div class="form-group col-md-3">
+                               <label for="inputEmail" class="sr-only">Email</label>
+                               <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
+                           </div>
+                       </div>
+                       <div class="form-row justify-content-center">
+                           <div class="form-group col-md-3">
+                               <label for="inputTelefone" class="sr-only">Telefone</label>
+                               <input type="tel" class="form-control" id="inputTelefone"  maxlength="12" placeholder="Telefone" required>
+                           </div>
+                        </div> 
+                        <div class="form-row justify-content-center">
+                           <div class="form-group col-md-3">
+                               <label for="inputCelular" class="sr-only">Ramo de Atuação</label>
+                               <input type="text" class="form-control" id="inputCelular" placeholder="Ramo de Atuação">
+                           </div>
+                       </div>
+                       <div class="form-row justify-content-center">
+                           <div class="form-group col-md-3">
+                               <label for="inputindicou" class="sr-only">Mensagem</label>
+                               <input type="text" class="form-control" id="inputindicou" placeholder="Mensagem" style="height: 6.5em;">
+                           </div>
+                        </div>  
+                       <div class="form-row justify-content-center">
+                            <button type="submit" class="btn btn-dark ">Enviar</button>
+                        </div>
+                   </form>
+            </main>
+        </div>
+        <footer>
+            &copy;2021 | Lótus Engenharia - Todos os direitos reservados
+        </footer>
+        <script src="js/java.js"></script>
+        <script src="js/jquery-3.6.0.min.js.js"></script>
+        <script src="js/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+        <script src="bootstrap-4.4.1-dist/bootstrap-4.4.1-dist/js/bootstrap.js"></script>
+    </body>
+</html>
